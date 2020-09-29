@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="250.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.hse.library.controllers.AddController">
+
+   <Label layoutX="50.0" layoutY="15.0" text="Добавить новую книгу">
+     <font>
+        <Font size="48.0" />
+     </font></Label>
+   <TextField fx:id="authorField" layoutX="60.0" layoutY="90.0" prefWidth="200" promptText="Автор" />
+   <TextField fx:id="titleField" layoutX="60.0" layoutY="120.0" prefWidth="200" promptText="Название" />
+   <TextField fx:id="publisherField" layoutX="60.0" layoutY="150.0" prefWidth="200" promptText="Издатель" />
+   <TextField fx:id="pagesField" layoutX="310.0" layoutY="90.0" promptText="Количество страниц" />
+   <TextField fx:id="genreField" layoutX="310.0" layoutY="120.0" promptText="Жанр" />
+   <TextField fx:id="priceField" layoutX="310.0" layoutY="150.0" promptText="Цена" />
+   <Button fx:id="addButton" defaultButton="true" layoutX="60.0" layoutY="200.0" onAction="#submitBook" prefWidth="150.0" text="Добавить" />
+   <Label fx:id="errorLabel" layoutX="220.0" layoutY="205.0" text="" textFill="RED" />
+
+</AnchorPane>

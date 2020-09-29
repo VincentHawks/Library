@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minWidth="500" prefHeight="480.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.hse.library.controllers.LibraryController">
+    <TextField fx:id="searchBar" layoutX="10" layoutY="10" onKeyReleased="#update" prefWidth="270.0" promptText="Поиск" />
+    <ComboBox fx:id="searchMode" layoutX="290" layoutY="10" prefWidth="90" />
+    <Button layoutX="390" layoutY="10" onAction="#update" prefWidth="100" text="Найти" />
+    <ScrollPane fx:id="pane" layoutY="50.0" minWidth="500">
+    </ScrollPane>
+</AnchorPane>

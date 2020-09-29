@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.hse.library.controllers.MainController">
+   <AnchorPane prefWidth="230" prefHeight="120">
+      <children>
+          <Button fx:id="addButton" onAction="#addButtonPressed" text="Добавить книгу" prefWidth="150" layoutY="10" layoutX="40"/>
+          <Button fx:id="libraryButton" onAction="#libraryButtonPressed" text="Список книг" prefWidth="150" layoutY="60" layoutX="40"/>
+          <Label fx:id="errorLabel" layoutX="10" layoutY="90" text="" textFill="red" />
+      </children>
+   </AnchorPane>
+</AnchorPane>
